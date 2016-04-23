@@ -22,18 +22,18 @@ public class Item {
 	
 	private String link;
 	
-	private Date pusblihed;
+	private Date published;
 	
 	@ManyToOne
 	@JoinColumn(name="blog_id")
 	private Blog blog;
 	
-	public Date getPusblihed() {
-		return pusblihed;
+	public Date getPublished() {
+		return published;
 	}
 
-	public void setPusblihed(Date pusblihed) {
-		this.pusblihed = pusblihed;
+	public void setPublished(Date published) {
+		this.published = published;
 	}
 
 	public Blog getBlog() {
