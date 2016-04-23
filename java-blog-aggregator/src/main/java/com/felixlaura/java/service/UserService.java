@@ -7,6 +7,7 @@ import org.springframework.data.domain.PageRequest;
 import org.springframework.data.domain.Sort.Direction;
 import org.springframework.stereotype.Service;
 import org.springframework.transaction.annotation.Transactional;
+import org.springframework.web.bind.annotation.RequestMapping;
 
 import com.felixlaura.java.entity.Blog;
 import com.felixlaura.java.entity.Item;
@@ -16,6 +17,7 @@ import com.felixlaura.java.repository.ItemRepository;
 import com.felixlaura.java.repository.UserRepository;
 
 @Service
+@Transactional
 public class UserService {
 
 	@Autowired
@@ -47,4 +49,9 @@ public class UserService {
 		user.setBlogs(blogs);
 		return user;
 	}
+
+	public void save(User user) {
+		userRepository.save(user);
+	}
+	
 }
