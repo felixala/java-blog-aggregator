@@ -74,5 +74,15 @@ public class InitDbService {
 		item2.setPusblihed(new Date());
 		itemRepository.save(item2);
 		
+		///////////////////////////
+		
+		User user1 = new User();
+		user1.setName("Felix");
+		user1.setEmail("felixgato8@gmail.com");
+		
+		User user2 = new User();
+		user2.setName("Nicolas");
+		user2.setEmail("nicolaslaura@gmail.com");
+		
 	}
 }
