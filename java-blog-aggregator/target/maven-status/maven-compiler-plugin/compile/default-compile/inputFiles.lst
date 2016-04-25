@@ -1,12 +1,13 @@
 /Users/felix/Documents/SpringToolSuiteWorkSpaceTutorials/java-blog-aggregator/java-blog-aggregator/src/main/java/com/felixlaura/java/repository/ItemRepository.java
-/Users/felix/Documents/SpringToolSuiteWorkSpaceTutorials/java-blog-aggregator/java-blog-aggregator/src/main/java/com/felixlaura/java/service/InitDbService.java
-/Users/felix/Documents/SpringToolSuiteWorkSpaceTutorials/java-blog-aggregator/java-blog-aggregator/src/main/java/com/felixlaura/java/entity/Item.java
-/Users/felix/Documents/SpringToolSuiteWorkSpaceTutorials/java-blog-aggregator/java-blog-aggregator/src/main/java/com/felixlaura/java/repository/BlogRepository.java
 /Users/felix/Documents/SpringToolSuiteWorkSpaceTutorials/java-blog-aggregator/java-blog-aggregator/src/main/java/com/felixlaura/java/controller/IndexController.java
 /Users/felix/Documents/SpringToolSuiteWorkSpaceTutorials/java-blog-aggregator/java-blog-aggregator/src/main/java/com/felixlaura/java/entity/Blog.java
 /Users/felix/Documents/SpringToolSuiteWorkSpaceTutorials/java-blog-aggregator/java-blog-aggregator/src/main/java/com/felixlaura/java/controller/UserController.java
 /Users/felix/Documents/SpringToolSuiteWorkSpaceTutorials/java-blog-aggregator/java-blog-aggregator/src/main/java/com/felixlaura/java/repository/RoleRepository.java
 /Users/felix/Documents/SpringToolSuiteWorkSpaceTutorials/java-blog-aggregator/java-blog-aggregator/src/main/java/com/felixlaura/java/service/UserService.java
+/Users/felix/Documents/SpringToolSuiteWorkSpaceTutorials/java-blog-aggregator/java-blog-aggregator/src/main/java/com/felixlaura/java/controller/loginController.java
 /Users/felix/Documents/SpringToolSuiteWorkSpaceTutorials/java-blog-aggregator/java-blog-aggregator/src/main/java/com/felixlaura/java/entity/Role.java
-/Users/felix/Documents/SpringToolSuiteWorkSpaceTutorials/java-blog-aggregator/java-blog-aggregator/src/main/java/com/felixlaura/java/repository/UserRepository.java
 /Users/felix/Documents/SpringToolSuiteWorkSpaceTutorials/java-blog-aggregator/java-blog-aggregator/src/main/java/com/felixlaura/java/entity/User.java
+/Users/felix/Documents/SpringToolSuiteWorkSpaceTutorials/java-blog-aggregator/java-blog-aggregator/src/main/java/com/felixlaura/java/service/InitDbService.java
+/Users/felix/Documents/SpringToolSuiteWorkSpaceTutorials/java-blog-aggregator/java-blog-aggregator/src/main/java/com/felixlaura/java/entity/Item.java
+/Users/felix/Documents/SpringToolSuiteWorkSpaceTutorials/java-blog-aggregator/java-blog-aggregator/src/main/java/com/felixlaura/java/repository/BlogRepository.java
+/Users/felix/Documents/SpringToolSuiteWorkSpaceTutorials/java-blog-aggregator/java-blog-aggregator/src/main/java/com/felixlaura/java/repository/UserRepository.java

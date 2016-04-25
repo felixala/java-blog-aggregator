@@ -39,4 +39,6 @@
 	
 	<jpa:repositories base-package="com.felixlaura.java.repository" />
 	
+	<import resource="security.xml"/>
+	
 </beans>
