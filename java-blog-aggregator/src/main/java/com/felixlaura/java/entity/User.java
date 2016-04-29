@@ -2,6 +2,7 @@ package com.felixlaura.java.entity;
 
 import java.util.List;
 
+import javax.persistence.Column;
 import javax.persistence.Entity;
 import javax.persistence.FetchType;
 import javax.persistence.GeneratedValue;
@@ -25,6 +26,14 @@ public class User {
 	
 	private boolean enabled;
 	
+	@Column(name = "enabledToken")
+	private boolean enabledToken;
+	
+	public User() {
+		super();
+		this.enabledToken = false;
+	}
+
 	@ManyToMany
 	@JoinTable
 	private List<Role> roles;
@@ -86,6 +95,14 @@ public class User {
 
 	public void setEnabled(boolean enabled) {
 		this.enabled = enabled;
+	}
+	
+	public boolean isEnabledToken() {
+		return enabledToken;
+	}
+
+	public void setEnabledToken(boolean enabledToken) {
+		this.enabledToken = enabledToken;
 	}
 	
 }

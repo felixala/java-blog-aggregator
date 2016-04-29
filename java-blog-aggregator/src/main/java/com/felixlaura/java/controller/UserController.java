@@ -12,6 +12,7 @@ import org.springframework.web.bind.annotation.RequestMethod;
 
 import com.felixlaura.java.entity.Blog;
 import com.felixlaura.java.entity.User;
+import com.felixlaura.java.service.BlogService;
 import com.felixlaura.java.service.UserService;
 
 @Controller

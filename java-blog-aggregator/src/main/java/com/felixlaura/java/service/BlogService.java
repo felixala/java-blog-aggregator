@@ -1,4 +1,4 @@
-package com.felixlaura.java.controller;
+package com.felixlaura.java.service;
 
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
