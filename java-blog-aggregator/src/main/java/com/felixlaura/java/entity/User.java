@@ -11,6 +11,9 @@ import javax.persistence.Id;
 import javax.persistence.JoinTable;
 import javax.persistence.ManyToMany;
 import javax.persistence.OneToMany;
+import javax.validation.constraints.Size;
+
+import org.hibernate.validator.constraints.Email;
 
 @Entity
 public class User {
@@ -19,10 +22,14 @@ public class User {
 	@GeneratedValue
 	private Integer id;
 	
+	@Size(min=3)
 	private String name;
 	
+	@Size(min=3)
+	@Email
 	private String email;
 	
+	@Size(min=5)
 	private String password;
 	
 	private boolean enabled;

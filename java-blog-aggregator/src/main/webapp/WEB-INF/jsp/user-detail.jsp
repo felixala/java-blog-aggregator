@@ -4,7 +4,7 @@
 <%@ include file="../layout/taglib.jsp"%>
 
 
-<h1>Welcome ${user.name}</h1>
+<h1>Welcome <c:out value="${user.name}"/></h1>
 
 <!-- Button trigger modal -->
 <button type="button" class="btn btn-primary btn-lg" data-toggle="modal" data-target="#myModal">
@@ -26,6 +26,7 @@
 						<label for="name" class="col-sm-2 control-label">Name:</label>
 						<div class="col-sm-10">
 							<form:input path="name" cssClass="form-control" />
+							<form:errors path="name"/>
 						</div>
 					</div>
 
@@ -33,6 +34,7 @@
 						<label for="name" class="col-sm-2 control-label">URL:</label>
 						<div class="col-sm-10">
 							<form:input path="url" cssClass="form-control" />
+							<form:errors path="url"/>
 						</div>
 					</div>
 
@@ -74,11 +76,11 @@
   <div class="tab-content">
   	<c:forEach items="${user.blogs}" var="blog">
     	<div role="tabpanel" class="tab-pane active" id="blog_${blog.id}">
-    		<h1>${blog.name}</h1>
+    		<h1><c:out value="${blog.name}"/></h1>
 			<p>
 			<a href="<spring:url value="/blog/remove/${blog.id}.html" />" class="btn btn-danger triggerRemove">Remove Blog</a>
 			
-			${blog.url}</p>
+			<c:out value="${blog.url}"/></p>
 	
 	<table class="table table-bordered table-hover table-striped">
 		<thead>
@@ -90,8 +92,8 @@
 		<tbody>
 			<c:forEach items="${blog.items}" var="item">
 				<tr>
-					<td>${item.title}</td>
-					<td>${item.link}</td>
+					<td><c:out value="${item.title}"/></td>
+					<td><c:out value="${item.link}"/></td>
 				</tr>
 			</c:forEach>
 		</tbody>
