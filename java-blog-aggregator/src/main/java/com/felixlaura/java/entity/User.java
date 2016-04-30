@@ -2,6 +2,7 @@ package com.felixlaura.java.entity;
 
 import java.util.List;
 
+import javax.persistence.CascadeType;
 import javax.persistence.Column;
 import javax.persistence.Entity;
 import javax.persistence.FetchType;
@@ -29,17 +30,17 @@ public class User {
 	@Column(name = "enabledToken")
 	private boolean enabledToken;
 	
-	public User() {
-		super();
-		this.enabledToken = false;
-	}
-
 	@ManyToMany
 	@JoinTable
 	private List<Role> roles;
 	
-	@OneToMany(mappedBy="user", fetch=FetchType.LAZY)
+	@OneToMany(mappedBy="user", fetch=FetchType.LAZY, cascade = CascadeType.REMOVE)
 	private List<Blog> blogs;
+	
+	public User() {
+		super();
+		this.enabledToken = false;
+	}
 
 	public List<Role> getRoles() {
 		return roles;
