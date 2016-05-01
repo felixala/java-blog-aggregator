@@ -30,6 +30,7 @@ public class User {
 	private String email;
 	
 	@Size(min=5)
+	//@Pattern(regexp="((?=.*\\d)(?=.*[a-z])(?=.*[A-Z])(?=.*[@#$%]).{5,20})")
 	private String password;
 	
 	private boolean enabled;
