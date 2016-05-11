@@ -63,7 +63,16 @@
 				rules: {
 					name: {
 						required : true,
-						minlength : 3
+						minlength : 3,
+						remote : {
+							url : "<spring:url value='/register/available.html' />",
+							type : "get",
+							data : {
+								username : function(){
+									return $("#name").val();
+								}
+							}
+						}
 					},
 					email: {
 						required : true,
@@ -90,6 +99,12 @@
 					$(element).closest('.form-group').removeClass('has-error has-feedback').addClass('has-success has-feedback')
 					$(element).closest('.form-group').find('i.fa').remove();
 		            $(element).closest('.form-group').append('<i class="fa fa-check fa-lg form-control-feedback"></i>');
+				},
+				
+				messages:{
+					name: {
+						remote: "Such username already exists!"
+					}
 				}
 			}		
 		);
