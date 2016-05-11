@@ -15,7 +15,7 @@
   New Blog
 </button>
 
-<form:form commandName="blog" cssClass="form-horizontal">
+<form:form commandName="blog" cssClass="form-horizontal blogForm">
 <!-- Modal -->
 <div class="modal fade" id="myModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
   <div class="modal-dialog" role="document">
@@ -64,6 +64,35 @@
 			$("#modalRemove .removeBtn").attr("href",$(this).attr("href"));
 			$("#modalRemove").modal();
 		});
+		
+		
+		$(".blogForm").validate(
+				{
+					rules: {
+						name: {
+							required : true,
+							minlength : 1
+						},
+						url: {
+							required : true,
+							url : true
+						}
+					},
+					highlight: function(element){
+						$(element).closest('.form-group').removeClass('has-success has-feedback').addClass('has-error has-feedback');
+						$(element).closest('.form-group').find('i.fa').remove();
+			            $(element).closest('.form-group').append('<i class="fa fa-exclamation fa-lg form-control-feedback"></i>');
+					},
+					
+					unhighlight: function(element){
+						$(element).closest('.form-group').removeClass('has-error has-feedback').addClass('has-success has-feedback')
+						$(element).closest('.form-group').find('i.fa').remove();
+			            $(element).closest('.form-group').append('<i class="fa fa-check fa-lg form-control-feedback"></i>');
+					}
+				}		
+		
+		);
+		
 	});
 </script>
 

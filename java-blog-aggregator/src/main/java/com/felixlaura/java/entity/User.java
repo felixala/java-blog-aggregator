@@ -15,6 +15,8 @@ import javax.validation.constraints.Size;
 
 import org.hibernate.validator.constraints.Email;
 
+import com.felixlaura.java.annotation.UniqueUsername;
+
 @Entity
 public class User {
 	
@@ -23,6 +25,9 @@ public class User {
 	private Integer id;
 	
 	@Size(min=3)
+	@Column(unique=true)
+	//Custom Validation Annotation
+	@UniqueUsername(message="Such username already exists!")
 	private String name;
 	
 	@Size(min=3)
