@@ -118,15 +118,23 @@
 	<table class="table table-bordered table-hover table-striped">
 		<thead>
 			<tr>
-				<th>Title</th>
-				<th>Link</th>
+				<th>Date</th>
+				<th>Item</th>
 			</tr>
 		</thead>
 		<tbody>
 			<c:forEach items="${blog.items}" var="item">
 				<tr>
-					<td><c:out value="${item.title}"/></td>
-					<td><c:out value="${item.link}"/></td>
+					<td><c:out value="${item.published}"/></td>
+					<td>
+						<strong>
+							<a href="<c:out value="${item.link}"/>" target="_bllank">
+								<c:out value="${item.title}"></c:out>
+							</a>
+						</strong>
+						<br />
+						${item.description}
+					</td>
 				</tr>
 			</c:forEach>
 		</tbody>

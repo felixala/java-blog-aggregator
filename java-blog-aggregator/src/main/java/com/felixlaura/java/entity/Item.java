@@ -2,11 +2,11 @@ package com.felixlaura.java.entity;
 
 import java.util.Date;
 
+import javax.persistence.Column;
 import javax.persistence.Entity;
 import javax.persistence.GeneratedValue;
 import javax.persistence.Id;
 import javax.persistence.JoinColumn;
-import javax.persistence.JoinTable;
 import javax.persistence.ManyToOne;
 
 @Entity
@@ -18,6 +18,7 @@ public class Item {
 	
 	private String title;
 	
+	@Column(length= 10000)
 	private String description;
 	
 	private String link;
