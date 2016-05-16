@@ -3,6 +3,7 @@
 /Users/felix/Documents/STSWorkspace/java-blog-aggregator/java-blog-aggregator/src/main/java/com/felixlaura/java/repository/UserRepository.java
 /Users/felix/Documents/STSWorkspace/java-blog-aggregator/java-blog-aggregator/src/main/java/com/felixlaura/java/rss/ObjectFactory.java
 /Users/felix/Documents/STSWorkspace/java-blog-aggregator/java-blog-aggregator/src/main/java/com/felixlaura/java/rss/TTextInput.java
+/Users/felix/Documents/STSWorkspace/java-blog-aggregator/java-blog-aggregator/src/main/java/com/felixlaura/java/service/ItemService.java
 /Users/felix/Documents/STSWorkspace/java-blog-aggregator/java-blog-aggregator/src/main/java/com/felixlaura/java/rss/TSource.java
 /Users/felix/Documents/STSWorkspace/java-blog-aggregator/java-blog-aggregator/src/main/java/com/felixlaura/java/repository/BlogRepository.java
 /Users/felix/Documents/STSWorkspace/java-blog-aggregator/java-blog-aggregator/src/main/java/com/felixlaura/java/controller/UserController.java
