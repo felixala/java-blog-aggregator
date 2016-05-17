@@ -38,6 +38,8 @@ public class InitDbService {
 	
 	@PostConstruct
 	public void init(){
+		
+		if(roleRepository.findByName("ROLE_ADMIN") == null){
 		Role roleAdmin = new Role();
 		roleAdmin.setName("ROLE_ADMIN");
 		roleRepository.save(roleAdmin);
@@ -59,8 +61,8 @@ public class InitDbService {
 		userRepository.save(userAdmin);
 		
 		Blog blogJavavids = new Blog();
-		blogJavavids.setName("JavaVids");
-		blogJavavids.setUrl("http://feeds.feedburner.com/javavids?format=xml");
+		blogJavavids.setName("PeruNews");
+		blogJavavids.setUrl("http://elcomercio.pe/feed/portada.xml");
 		blogJavavids.setUser(userAdmin);
 		blogRepository.save(blogJavavids);
 		
@@ -89,4 +91,5 @@ public class InitDbService {
 		user2.setEmail("nicolaslaura@gmail.com");
 		
 	}
+}
 }

@@ -3,7 +3,7 @@
 	
 <%@ include file="../layout/taglib.jsp"%>
 
-<h1>Latest News from the Java World!</h1>
+<h1>Latest News from Peru!</h1>
 
 <table class="table table-bordered table-hover table-striped">
 	<thead>
@@ -18,7 +18,9 @@
 				<td>
 					<c:out value="${item.published}" />
 					<br />
-					<c:out value="${item.blog.name}"></c:out>
+					<strong>
+						<c:out value="${item.blog.name}"></c:out>
+					</strong>
 				</td>
 				
 				
